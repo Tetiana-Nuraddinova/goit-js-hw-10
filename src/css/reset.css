@@ -25,10 +25,25 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
+    background: none;
+    font: inherit;
+    color: inherit;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+input {
+  font-family: inherit;
+  outline: transparent;
+}
+
+textarea {
+  font-family: inherit;
+  outline: transparent;
+  resize: none;
 }
