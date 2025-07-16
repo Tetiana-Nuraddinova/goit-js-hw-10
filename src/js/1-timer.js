@@ -44,7 +44,8 @@ const options = {
         }
     },
   };
-flatpickr('#datetime-picker', options);
+const flatpickrInstance = flatpickr('#datetime-picker', options);
+
 
 startBtn.addEventListener('click', () => {
     startBtn.disabled = true;
@@ -58,6 +59,9 @@ startBtn.addEventListener('click', () => {
             clearInterval(timerId);
             updateTimerUl(0);
             input.disabled = false;
+            input.value = '';
+flatpickrInstance.clear();
+
             return;
 
         }
