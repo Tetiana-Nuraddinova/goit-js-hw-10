@@ -1,6 +1,8 @@
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 import "/css/styles.css";
+import okIcon from '../img/ok.svg';
+import errorIcon from '../img/error.svg';
 
 const form = document.querySelector(".form");
 
@@ -18,7 +20,7 @@ function onFormSubmit(event) {
                 title: ' OK',
                 message: `Fulfilled promise in ${result}ms`,
                 position: 'topRight',
-                iconUrl: '/img/ok.svg',
+                iconUrl: okIcon,
                 class: 'my-style-toast',
                 titleColor: '#ffffff',
                 messageColor: '#ffffff',
@@ -31,7 +33,7 @@ function onFormSubmit(event) {
                     title: 'Error',
                     message: `Rejected promise in ${error}ms`,
                     position: 'topRight',
-                    iconUrl: '/img/error.svg',
+                    iconUrl: errorIcon,
                     class: 'my-style-toast',
                     titleColor: '#ffffff',
                     messageColor: '#ffffff',
@@ -67,9 +69,9 @@ delayInput.addEventListener('blur', () => {
     delayInput.classList.remove('pressed');
 });
 
-const radioButtons = document.querySelector('input[name="state"]');
+const radioButtons = document.querySelectorAll('input[name="state"]');
 
-radioButtons.forEach(element => {
+radioButtons.forEach(radio => {
     radio.addEventListener('change', () => {
         fieldset.classList.add('pressed');
     });

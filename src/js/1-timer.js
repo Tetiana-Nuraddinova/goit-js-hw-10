@@ -3,7 +3,7 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 import "/css/styles.css"
-
+import errorIcon from '../img/error.svg';
 
 const startBtn = document.querySelector('#start-button');
 const input = document.querySelector('#datetime-picker');
@@ -30,7 +30,7 @@ const options = {
                 message: 'Please choose a date in the future',
                 position: 'topCenter',
                 class: 'toast-error',
-                iconUrl: '/img/error.svg', 
+                iconUrl: errorIcon, 
                 iconColor: '#ffffff',
                 backgroundColor: '#ef4040ff;',
                 messageColor: '#ffffff',
