@@ -32,7 +32,7 @@ const options = {
                 class: 'toast-error',
                 iconUrl: '/img/error.svg', 
                 iconColor: '#ffffff',
-                backgroundColor: '#ef4040;',
+                backgroundColor: '#ef4040ff;',
                 messageColor: '#ffffff',
                 progressBarColor: '#b51b1b',
                

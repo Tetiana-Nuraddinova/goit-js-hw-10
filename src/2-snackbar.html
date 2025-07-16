@@ -5,13 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snackbar</title>
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <main>
       <div class="container">
         <a class="back-link" href="./index.html">Go back</a>
       </div>
+      <form class="form">
+        <label class="label-form">
+          Delay (ms)
+          <input type="number" name="delay" class="input-form" required />
+        </label>
+
+        <fieldset class="fieldset">
+          <legend class="legend">State</legend>
+          <div class="fieldset-body">
+            <div class="set-container">
+              <label class="set-label">
+                <input
+                  type="radio"
+                  name="state"
+                  class="set-input"
+                  value="fulfilled"
+                  required
+                />
+                Fulfilled
+              </label>
+              <label class="set-label">
+                <input
+                  type="radio"
+                  name="state"
+                  class="set-input"
+                  value="rejected"
+                  required
+                />
+                Rejected
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-form">Create notification</button>
+      </form>
     </main>
     <script type="module" src="./js/2-snackbar.js"></script>
   </body>
